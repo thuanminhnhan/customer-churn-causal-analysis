@@ -220,29 +220,22 @@ The results should therefore be interpreted as model-based estimates under expli
 
 ## Reproducibility
 
-Install the project dependencies:
+1. Install the required dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Obtain the dataset from its public source and place the CSV file at:
+2. Obtain the dataset from the [Tidymodels source](https://modeldata.tidymodels.org/reference/mlc_churn.html).
 
-```text
-data/churn.csv
-```
+3. Open the project in Visual Studio Code with the Python and Jupyter extensions.
 
-Before running the analysis, ensure that the `DATA_PATH` and `OUTPUT_DIR` variables in `src/causal_analysis.py` point to the dataset and output directories on your machine.
+4. Configure the local file paths in `src/causal_analysis.ipynb` and execute the notebooks in order:
 
-Run the analysis:
+   - `src/causal_analysis.ipynb`
+   - `src/visualization.ipynb`
 
-```bash
-python src/causal_analysis.py
-```
-
-The generated analysis outputs are saved to the configured output directory.
-
-The original dataset is excluded from version control and is not included in this repository.
+The original dataset is not included in this repository. Generated visualizations are available in `outputs/`.
 
 ## Tools
 
