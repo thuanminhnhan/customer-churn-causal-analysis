@@ -9,7 +9,7 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Local data
+# Local data - do not upload raw datasets
 data/*.csv
 data/*.xlsx
 data/*.xls
@@ -17,6 +17,7 @@ data/*.xls
 # Generated outputs
 outputs/*
 !outputs/.gitkeep
+!outputs/*.png
 
 # OS and IDE
 .DS_Store
